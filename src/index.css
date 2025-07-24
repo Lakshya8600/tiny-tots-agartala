@@ -128,7 +128,7 @@
 }
 
 @layer utilities {
-  /* Animations for Tiny Tots Kids Club */
+  /* Kid-Friendly Animations for Tiny Tots Kids Club */
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -140,12 +140,34 @@
     }
   }
 
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0.3) translateY(-50px);
+      opacity: 0;
     }
     50% {
-      transform: translateY(-10px);
+      transform: scale(1.05) translateY(-10px);
+      opacity: 0.8;
+    }
+    70% {
+      transform: scale(0.95) translateY(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-10px) rotate(1deg);
+    }
+    66% {
+      transform: translateY(-5px) rotate(-1deg);
     }
   }
 
@@ -158,17 +180,128 @@
     }
   }
 
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 30px hsl(var(--primary) / 0.6);
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes rainbow-text {
+    0% { color: hsl(var(--primary)); }
+    16% { color: hsl(280 95% 65%); }
+    33% { color: hsl(200 95% 65%); }
+    50% { color: hsl(120 95% 45%); }
+    66% { color: hsl(60 95% 55%); }
+    83% { color: hsl(30 95% 55%); }
+    100% { color: hsl(var(--primary)); }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes tada {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  /* Animation Classes */
   .animate-fade-in {
     animation: fade-in 1s ease-out;
   }
 
+  .animate-bounce-in {
+    animation: bounce-in 0.8s var(--bounce-gentle);
+  }
+
   .animate-float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
   .animate-wiggle {
     animation: wiggle 1s ease-in-out infinite;
   }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-rainbow-text {
+    animation: rainbow-text 3s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out;
+  }
+
+  .animate-tada {
+    animation: tada 1s ease-in-out;
+  }
+
+  /* Hover Animations */
+  .hover-bounce:hover {
+    animation: bounce-in 0.5s var(--bounce-gentle);
+  }
+
+  .hover-wiggle:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 25px hsl(var(--primary) / 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s var(--bounce-gentle);
+  }
+
+  .hover-rainbow:hover {
+    animation: rainbow-text 1s ease-in-out;
+  }
+
+  /* Staggered animations for lists */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
 
   /* Smooth scrolling */
   html {
