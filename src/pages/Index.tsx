@@ -1,6 +1,9 @@
 import { HeroSection } from '@/components/HeroSection';
 import { ActivitiesSection } from '@/components/ActivitiesSection';
 import { KarateGallery } from '@/components/KarateGallery';
+import { DrawingSection } from '@/components/DrawingSection';
+import { VideosSection } from '@/components/VideosSection';
+import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
@@ -11,6 +14,9 @@ const Index = () => {
       <HeroSection />
       <ActivitiesSection />
       <KarateGallery />
+      <DrawingSection />
+      <VideosSection />
+      <TestimonialsSection />
       
       {/* Contact Section with animations */}
       <section className="py-20 bg-gradient-card">
