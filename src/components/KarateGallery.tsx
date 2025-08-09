@@ -165,7 +165,7 @@ export const KarateGallery = () => {
               </ul>
             </div>
 
-            <div className="bg-card rounded-xl p-6 shadow-soft">
+            {/* <div className="bg-card rounded-xl p-6 shadow-soft">
               <h3 className="text-2xl font-bold text-foreground mb-4">Class Schedule</h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex justify-between">
@@ -186,7 +186,7 @@ export const KarateGallery = () => {
                   </Button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

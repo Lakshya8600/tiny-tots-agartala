@@ -1,53 +1,61 @@
 import { Card, CardContent } from '@/components/ui/card';
+import drawing1 from '@/assets/drawing1.jpg';
+import drawing2 from '@/assets/drawing2.jpg';
+import drawing3 from '@/assets/drawing3.jpg';
+import drawing4 from '@/assets/drawing4.jpg';
+import drawing5 from '@/assets/drawing5.jpg';
+import drawing6 from '@/assets/drawing6.jpg';
+import drawing7 from '@/assets/drawing7.jpg';
+import drawing8 from '@/assets/drawing8.jpg';
 
 const DrawingSection = () => {
   const drawings = [
     {
       id: 1,
-      title: "Animal Friends",
-      image: "https://images.unsplash.com/photo-1535268647677-300892687aa?w=400&h=300&fit=crop",
+      title: "Drawings",
+      image: drawing1,
       artist: "Aarav, Age 5"
     },
     {
       id: 2,
       title: "My Family",
-      image: "https://images.unsplash.com/photo-1441057206919-63d19fac2369?w=400&h=300&fit=crop",
+      image: drawing2,
       artist: "Priya, Age 6"
     },
     {
       id: 3,
-      title: "Happy Monkey",
-      image: "https://images.unsplash.com/photo-1501286353178-1ec881214838?w=400&h=300&fit=crop",
+      title: "Focus",
+      image: drawing3,
       artist: "Rohan, Age 4"
     },
     {
       id: 4,
-      title: "Farm Animals",
-      image: "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?w=400&h=300&fit=crop",
+      title: "Farm ",
+      image: drawing4,
       artist: "Ananya, Age 7"
     },
     {
       id: 5,
       title: "Safari Adventure",
-      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=400&h=300&fit=crop",
+      image: drawing5,
       artist: "Arjun, Age 6"
     },
     {
       id: 6,
       title: "Mountain View",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&h=300&fit=crop",
+      image:drawing6,
       artist: "Kavya, Age 5"
     },
     {
       id: 7,
       title: "Magical Forest",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop",
+      image: drawing7,
       artist: "Dev, Age 8"
     },
     {
       id: 8,
       title: "Yummy Treats",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
+      image:drawing8,
       artist: "Isha, Age 4"
     }
   ];
@@ -82,10 +90,10 @@ const DrawingSection = () => {
                 </div>
                 <div className="p-4 text-center">
                   <h3 className="text-lg font-bold text-foreground mb-2 hover-rainbow animate-wiggle">
-                    {drawing.title}
+                    {/* {drawing.title} */}
                   </h3>
                   <p className="text-sm text-muted-foreground animate-fade-in">
-                    By {drawing.artist}
+                    {/* By {drawing.artist} */}
                   </p>
                 </div>
               </CardContent>

@@ -2,6 +2,13 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Palette } from 'lucide-react';
+import craft1 from '@/assets/craft1.jpg';
+import craft2 from '@/assets/craft2.jpg';
+import craft3 from '@/assets/craft3.jpg';
+import craft4 from '@/assets/craft4.jpg';
+import craft5 from '@/assets/craft5.jpg';
+import craft6 from '@/assets/craft6.jpg';
+import craft7 from '@/assets/craft7.jpg';
 
 const ArtsGallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -9,51 +16,45 @@ const ArtsGallery = () => {
   const artsImages = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop",
+      url:craft1,
       title: "Creative Painting Session",
       description: "Little artists exploring colors and creativity"
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=600&fit=crop",
-      title: "Clay Modeling Fun",
+      url: craft2,
+      title: "Out of the box thinking",
       description: "Shaping imagination with hands-on clay work"
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop",
+      url: craft3,
       title: "Colorful Art Projects",
       description: "Bringing ideas to life through art"
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&h=600&fit=crop",
+      url: craft4,
       title: "Craft Time Magic",
       description: "Creating wonderful handmade treasures"
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&h=600&fit=crop",
+      url: craft5,
       title: "Paper Art Creations",
       description: "Amazing origami and paper crafts"
     },
     {
       id: 6,
-      url: "https://images.unsplash.com/photo-1515887431348-3627d29ab9db?w=800&h=600&fit=crop",
+      url: craft6,
       title: "Drawing Adventures",
       description: "Expressing stories through beautiful drawings"
     },
     {
       id: 7,
-      url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      url: craft7,
       title: "Collaborative Art",
       description: "Working together on amazing group projects"
-    },
-    {
-      id: 8,
-      url: "https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=800&h=600&fit=crop",
-      title: "Masterpiece Gallery",
-      description: "Showcasing our young artists' incredible work"
     }
   ];
 

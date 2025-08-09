@@ -112,11 +112,11 @@ export const ActivitiesSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up stagger-3">
               <Button variant="playful" size="xl" className="group hover-bounce animate-pulse-glow">
                 <Heart className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform animate-wiggle" />
-                Enroll Your Child
+                Contact +91 70700 93212
               </Button>
-              <Button variant="outline" size="xl" className="hover:bg-primary hover:text-primary-foreground hover-wiggle">
+              {/* <Button variant="outline" size="xl" className="hover:bg-primary hover:text-primary-foreground hover-wiggle">
                 Schedule a Visit
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

@@ -43,14 +43,14 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up stagger-4">
-            <Button variant="playful" size="xl" className="group hover-bounce animate-pulse-glow">
+            {/* <Button variant="playful" size="xl" className="group hover-bounce animate-pulse-glow">
               Join Our Club
               <Heart className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform animate-wiggle" />
             </Button>
             <Button variant="fun" size="xl" className="hover-wiggle">
               Explore Activities
               <Star className="ml-2 h-5 w-5 animate-spin-slow" />
-            </Button>
+            </Button> */}
           </div>
 
           {/* Stats with enhanced animations */}
