@@ -27,7 +27,7 @@ const activities = [
   },
   {
     icon: BookOpen,
-    title: "Storytelling",
+    title: "Spoken English & Storytelling",
     description: "Interactive story sessions that enhance language skills, creativity, and ignite a passion for reading.",
     color: "from-green-400 to-teal-500"
   },
