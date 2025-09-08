@@ -3,7 +3,7 @@ import { ActivitiesSection } from '@/components/ActivitiesSection';
 import { KarateGallery } from '@/components/KarateGallery';
 import { ArtsGallery } from '@/components/ArtsGallery';
 import { DrawingSection } from '@/components/DrawingSection';
-import { VideosSection } from '@/components/VideosSection';
+
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -17,7 +17,7 @@ const Index = () => {
       <KarateGallery />
       <ArtsGallery />
       <DrawingSection />
-      <VideosSection />
+      
       <TestimonialsSection />
       
       {/* Payment QR Code Section */}
