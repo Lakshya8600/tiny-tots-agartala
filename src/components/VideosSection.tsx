@@ -34,71 +34,71 @@ const VideosSection = () => {
     }
   ];
 
-  // return (
-  //   <section className="py-20 bg-gradient-card">
-  //     <div className="container mx-auto px-4">
-  //       <div className="text-center mb-16">
-  //         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in hover-rainbow">
-  //           Watch Us In Action! 📹
-  //         </h2>
-  //         <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-slide-up stagger-2">
-  //           Get a glimpse into the joy, learning, and excitement at Tiny Tots Kids Club
-  //         </p>
-  //       </div>
+  return (
+    <section className="py-20 bg-gradient-card">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in hover-rainbow">
+            Watch Us In Action! 📹
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-slide-up stagger-2">
+            Get a glimpse into the joy, learning, and excitement at Tiny Tots Kids Club
+          </p>
+        </div>
 
-  //       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-  //         {videos.map((video, index) => (
-  //           <Card 
-  //             key={video.id} 
-  //             className="group bg-card shadow-soft border-0 hover-glow animate-slide-up hover-bounce overflow-hidden"
-  //             style={{animationDelay: `${index * 0.2}s`}}
-  //           >
-  //             <CardContent className="p-0">
-  //               <div className="relative overflow-hidden">
-  //                 <img 
-  //                   src={video.thumbnail} 
-  //                   alt={video.title}
-  //                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-  //                 />
-  //                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-  //                   <Button 
-  //                     variant="secondary" 
-  //                     size="lg" 
-  //                     className="bg-white/90 text-foreground hover:bg-white animate-pulse-glow hover-bounce"
-  //                   >
-  //                     <Play className="h-6 w-6 mr-2 animate-wiggle" />
-  //                     Play Video
-  //                   </Button>
-  //                 </div>
-  //                 <div className="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded text-sm animate-float">
-  //                   {video.duration}
-  //                 </div>
-  //                 <div className="absolute bottom-3 left-3">
-  //                   <Video className="h-6 w-6 text-white animate-pulse-glow" />
-  //                 </div>
-  //               </div>
-  //               <div className="p-6">
-  //                 <h3 className="text-xl font-bold text-foreground mb-3 hover-rainbow animate-wiggle">
-  //                   {video.title}
-  //                 </h3>
-  //                 <p className="text-muted-foreground animate-fade-in">
-  //                   {video.description}
-  //                 </p>
-  //               </div>
-  //             </CardContent>
-  //           </Card>
-  //         ))}
-  //       </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {videos.map((video, index) => (
+            <Card 
+              key={video.id} 
+              className="group bg-card shadow-soft border-0 hover-glow animate-slide-up hover-bounce overflow-hidden"
+              style={{animationDelay: `${index * 0.2}s`}}
+            >
+              <CardContent className="p-0">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={video.thumbnail} 
+                    alt={video.title}
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Button 
+                      variant="secondary" 
+                      size="lg" 
+                      className="bg-white/90 text-foreground hover:bg-white animate-pulse-glow hover-bounce"
+                    >
+                      <Play className="h-6 w-6 mr-2 animate-wiggle" />
+                      Play Video
+                    </Button>
+                  </div>
+                  <div className="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded text-sm animate-float">
+                    {video.duration}
+                  </div>
+                  <div className="absolute bottom-3 left-3">
+                    <Video className="h-6 w-6 text-white animate-pulse-glow" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-3 hover-rainbow animate-wiggle">
+                    {video.title}
+                  </h3>
+                  <p className="text-muted-foreground animate-fade-in">
+                    {video.description}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
 
-  //       <div className="text-center mt-12">
-  //         <Button variant="playful" size="lg" className="animate-pulse-glow hover-bounce">
-  //           <Video className="h-5 w-5 mr-2 animate-wiggle" />
-  //           View All Videos
-  //         </Button>
-  //       </div>
-  //     </div>
-  //   </section>
-  // );
+        <div className="text-center mt-12">
+          <Button variant="playful" size="lg" className="animate-pulse-glow hover-bounce">
+            <Video className="h-5 w-5 mr-2 animate-wiggle" />
+            View All Videos
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export { VideosSection };

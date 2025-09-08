@@ -20,84 +20,52 @@ const Index = () => {
       <VideosSection />
       <TestimonialsSection />
       
-      {/* Contact Section with animations */}
+      {/* Payment QR Code Section */}
       <section className="py-20 bg-gradient-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in hover-rainbow">
-              Visit Us in Agartala
+              Easy Payments 💳
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-slide-up stagger-2">
-              Come see where the magic happens! We'd love to meet you and your little one.
+              Pay securely and instantly using our QR code payment system
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <Card className="bg-card shadow-soft border-0 hover-glow animate-slide-up stagger-3">
+          <div className="max-w-md mx-auto">
+            <Card className="bg-card shadow-soft border-0 hover-glow animate-slide-up text-center">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6 hover-rainbow">Get in Touch</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center hover-bounce">
-                    <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center mr-4 animate-float animate-pulse-glow">
-                      <MapPin className="h-6 w-6 text-white animate-wiggle" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Location</p>
-                      <p className="text-muted-foreground">Agartala, Tripura</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center hover-bounce stagger-1">
-                    <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center mr-4 animate-float animate-pulse-glow" style={{animationDelay: '0.5s'}}>
-                      <Phone className="h-6 w-6 text-white animate-wiggle" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Phone</p>
-                      <p className="text-muted-foreground">Call for more info</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center hover-bounce stagger-2">
-                    <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center mr-4 animate-float animate-pulse-glow" style={{animationDelay: '1s'}}>
-                      <Mail className="h-6 w-6 text-white animate-spin-slow" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Email</p>
-                      <p className="text-muted-foreground">info@tinytotsclub.com</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center hover-bounce stagger-3">
-                    <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center mr-4 animate-float animate-pulse-glow" style={{animationDelay: '1.5s'}}>
-                      <Clock className="h-6 w-6 text-white animate-tada" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Hours</p>
-                      <p className="text-muted-foreground">Mon-Sat: 9AM-6PM</p>
-                    </div>
+                <h3 className="text-2xl font-bold text-foreground mb-6 hover-rainbow animate-wiggle">Scan & Pay</h3>
+                
+                {/* QR Code Placeholder */}
+                <div className="w-48 h-48 bg-gradient-hero rounded-2xl mx-auto mb-6 flex items-center justify-center animate-pulse-glow hover-bounce">
+                  <div className="w-40 h-40 bg-white rounded-xl flex items-center justify-center">
+                    <div className="text-6xl animate-wiggle">📱</div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card shadow-soft border-0 hover-glow animate-slide-up stagger-4">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6 hover-rainbow animate-wiggle">Ready to Start?</h3>
-                <p className="text-muted-foreground mb-6 animate-fade-in stagger-5">
-                  Join our wonderful community of families in Agartala. Your child's journey 
-                  of learning, growth, and joy begins here at Tiny Tots Kids Club!
+                
+                <p className="text-muted-foreground mb-4 animate-fade-in">
+                  Use any UPI app to scan this QR code for instant payment
                 </p>
-                <div className="space-y-4">
-                  <Button variant="playful" size="lg" className="w-full hover-bounce animate-pulse-glow">
-                    Schedule a Visit
-                  </Button>
-                  <Button variant="outline" size="lg" className="w-full hover:bg-primary hover:text-primary-foreground hover-wiggle">
-                    Call Us Today
-                  </Button>
-                  <p className="text-sm text-muted-foreground text-center animate-float">
-                    Ages 3-12 welcome • Flexible schedules available
+                
+                <div className="space-y-3 text-sm text-muted-foreground animate-slide-up stagger-3">
+                  <p className="flex items-center justify-center hover-bounce">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse-glow"></span>
+                    Google Pay, PhonePe, Paytm supported
+                  </p>
+                  <p className="flex items-center justify-center hover-bounce stagger-1">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse-glow"></span>
+                    Secure & instant payment processing
+                  </p>
+                  <p className="flex items-center justify-center hover-bounce stagger-2">
+                    <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse-glow"></span>
+                    24/7 payment support available
                   </p>
                 </div>
+
+                <Button variant="playful" size="lg" className="w-full mt-6 hover-bounce animate-pulse-glow">
+                  Need Help with Payment?
+                </Button>
               </CardContent>
             </Card>
           </div>
