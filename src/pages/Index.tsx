@@ -38,7 +38,7 @@ const Index = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-6 hover-rainbow animate-wiggle">Scan & Pay</h3>
                 
                 {/* QR Code */}
-                <div className="w-48 h-48 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center animate-pulse-glow hover-bounce p-4 shadow-lg">
+                <div className="w-64 h-64 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center animate-pulse-glow hover-bounce p-6 shadow-lg">
                   <img 
                     src="/lovable-uploads/4f338747-0cec-4d76-9156-95a06f4fa983.png" 
                     alt="Payment QR Code - Scan to pay instantly" 
